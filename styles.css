@@ -6,10 +6,10 @@
     font-family: "Mitr", sans-serif;
 }
 nav{
-    margin: 0 auto;
+    
     z-index: 999;
     position: fixed;
-    padding: 15px 20px 0px 0px;
+    padding: 15px 15px 0px 0px;
     top: 0;
     left: 0;
     display: flex;
@@ -23,6 +23,10 @@ nav.sticky{
     padding-bottom: 1px;
     padding-top: 10px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+
+    .title p{
+        color: white;
+    }
 }
 
 .menu ul{
@@ -56,6 +60,10 @@ nav.sticky{
     margin-right: 5px;
 }
 
+.logo{
+    display: flex;
+    align-items: center;
+}
 .logo img{
     border-radius: 100%;
     display: flex;
@@ -63,11 +71,15 @@ nav.sticky{
     align-items: center;
 }
 
+.title{
+    margin-top: 10px;
+}
+
 .search{
     position: relative;
     display: inline-block;
     margin-left: 300px;
-    
+    margin-top: 15px;
 }
 
 .search-icon{
