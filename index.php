@@ -14,47 +14,53 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="hamburger-icon" id="hamIcon" onclick="toggleHamburgerIcon(this)">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
+    <div class="sidebar">
+                <ul>
+                  <li onclick="hideSidebar()" class="xicon"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                    <li><a href="index.php"><i class="fas fa-house"></i> หน้าแรก</a></li>
+                    <li><a href="login.php"><i class="fas fa-user"></i> เข้าสู่ระบบ</a></li>
+                    <li><a href="schedule.php"><i class="fas fa-clipboard-list"></i> รายการแข่งขัน</a></li>
+                    <li><a href="result.php"><i class="fas fa-medal"></i> ผลการแข่งขัน</a></li>
+                </ul>
             </div>
+        <nav>
+           
 
             <div class="menu" id="Mymenu">
                 <ul>
-                    <li><a href="home.php">Home</a></li>
-                    <li><a href="login.php">Sign up</a></li>
-                    <li><a href="list.php">รายการแข่งขัน</a></li>
-                    <li><a href="result.php">รายงานผลการแข่งขัน</a></li>
+                    <li><a href="index.php"><i class="fas fa-house"></i> Home</a></li>
+                    <li><a href="login.php"><i class="fas fa-user"></i> Sign up</a></li>
+                    <li><a href="schedule.php"><i class="fas fa-clipboard-list"></i>รายการแข่งขัน</a></li>
+                    <li><a href="result.php"><i class="fas fa-medal"></i>ผลการแข่งขัน</a></li>
                 </ul>
             </div>
             
             <div class="logo">
-            <img src="pic/logo.svg" width="40px" height="40px">
+            <img src="pic/logo2.png" width="60px" height="60px">
             </div>
             
             <div class="sc">
                 <form class="search">
-                    <input type="search"  id="search" class="box-search" placeholder=" Search..."> 
+                    <input type="search"  id="search" class="box-search" placeholder="   Search..."> 
                     <span class="search-icon"><i class="fas fa-magnifying-glass"></i></span>
                 </form>
+                <span onclick="showSidebar()"><a href="#" class="bar-icon"><i class="fas fa-bars"></i></a></span>
             </div>
 
-
         </nav>
+        
     </header>
 
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active ">
-        <img src="pic/red1.jpg" class="d-block w-100"  style="height: 800px; ">
+        <img src="pic/red1.jpg" class="d-block w-100"  style="height: 1000px; ">
       </div>
       <div class="carousel-item">
-        <img src="pic/red2.jpg" class="d-block w-100" style="height: 800px; ">
+        <img src="pic/red2.jpg" class="d-block w-100" style="height: 1000px; ">
       </div>
       <div class="carousel-item">
-        <img src="pic/red3.jpg" class="d-block w-100" style="height: 800px; ">
+        <img src="pic/red3.jpg" class="d-block w-100" style="height: 1000px; ">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
@@ -67,11 +73,34 @@
     </button>
   </div>
 
-  <script >
+  <section>
+    <div class="ndmenu-container">
+      <div class="nd-menu" >
+        <ul>
+            <li><a href="#"> แผนผัง </a></li>
+            <li><a href="#"> รายชื่อครูประจำชั้นตามคณะสี </a></li>
+            <li><a href="#"> ระเบียบการแข่งขัน </a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
     window.addEventListener("scroll", function(){
     var nav = document.querySelector("nav");
     nav.classList.toggle('sticky', window.scrollY > 0);
     });
+
+    function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+    function hideSidebar(){ 
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
+    
   </script>
 </body>
 </html>
