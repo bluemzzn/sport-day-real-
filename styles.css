@@ -75,6 +75,10 @@ nav.sticky{
     margin-top: 10px;
 }
 
+.title p{
+	color: black;
+}
+
 .search{
     position: relative;
     display: inline-block;
