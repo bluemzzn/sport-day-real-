@@ -3,20 +3,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Mitr", sans-serif;
 }
 nav{
+    margin: 0 auto;
     z-index: 999;
     position: fixed;
     padding: 15px 20px 0px 0px;
+    top: 0;
+    left: 0;
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
     transition: 0.6s;
+    background-color: rgba(255, 255, 255, 0);
 }
 nav.sticky{
     background-color: darkblue;
     padding-bottom: 1px;
     padding-top: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
 
 .menu ul{
@@ -37,23 +43,31 @@ nav.sticky{
     background-color: darkblue;
     border-radius: 25px;
     margin-right: 20px;
-    padding: 10px;
+    padding: 15px;
     transition: 0.4s ease;
+    
+    
 }
 .menu li a:hover{
     color: skyblue;
 }
 
+.menu  i{
+    margin-right: 5px;
+}
 
 .logo img{
     border-radius: 100%;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .search{
     position: relative;
     display: inline-block;
     margin-left: 300px;
+    
 }
 
 .search-icon{
@@ -156,25 +170,245 @@ nav.sticky{
     color: black;
 }
 
-
-@media only screen and (max-width: 480px) {
-    .nav-wrapper {
-      flex-direction: column;
-      align-items: flex-start;
-      height: auto;
-      padding: 20px 30px;
-
-      .menu {
-        display: none;
-        flex-direction: column;
-        margin-top: 50px;
-
-        li {
-          margin-left: 0;
-          padding: 20px 0;
-        }
-      }
-    }
-    
-  }
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(0, 0, 139, 0.884);
+    backdrop-filter: blur(10px);
+    padding-top: 100px;
+   box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.1);
+   display: none;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
 }
+.sidebar li{
+    list-style: none;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.sidebar li a{
+    text-decoration: none;
+    font-family: "Mitr", sans-serif;
+    color: white;
+    width: 100%;
+}
+
+.sidebar li a:hover{
+    color: skyblue;
+}
+
+.bar-icon{
+    font-size: 25px;
+   margin-left: 13px;
+    color: white;
+    list-style: none;
+    top: 0;
+    right: 0;
+    display: none;
+   
+}
+
+@media (max-width: 1200px) {
+    .menu ul {
+        margin-right: 50px;
+    }
+
+    .box-search {
+        width: 200px;
+    }
+}
+
+@media (max-width: 800px) {
+    nav {
+        padding: 10px;
+        flex-direction: row;
+    }
+
+    .menu ul {
+        display: none; /* Hide the menu in mobile view */
+    }
+
+    .bar-icon {
+        display: block; /* Show the bar icon in mobile view */
+        color: black;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .sidebar {
+        display: flex; /* Sidebar menu becomes active */
+    }
+
+    .search {
+        display: none;
+    }
+}
+
+/* Adjustments for even smaller screens */
+@media (max-width: 500px) {
+    .box-search {
+        width: 100px;
+    }
+
+    nav.sticky {
+        padding: 5px;
+    }
+
+    .bar-icon {
+        margin-right: 10px;
+    }
+}
+
+/* Schedule page*/
+
+
+.schedule-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.schedule-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.schedule-header h2 {
+    font-family: "Mitr", sans-serif;
+    font-size: 28px;
+}
+
+.schedule-filter input {
+    padding: 10px;
+    width: 250px;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+}
+
+.schedule-categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.filter-button {
+    background-color: darkblue;
+    color: white;
+    font-family: "Mitr", sans-serif;
+    border: none;
+    border-radius: 30px;
+    
+    padding: 10px 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.filter-button:hover {
+    color: skyblue;
+}
+
+.schedule-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.event-card {
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+}
+
+.event-info h3 {
+    font-family: "Mitr", sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.event-info p {
+    font-family: "Mitr", sans-serif;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.event-status {
+    margin-top: 10px;
+    font-family: "Mitr", sans-serif;
+    font-weight: bold;
+    color: limegreen;
+}
+
+.event-date{
+    margin-top: 30px;
+    background-color: darkblue;
+   
+    font-family: "Mitr", sans-serif;
+    padding-left: 15px;
+    color: white;
+    padding: 12px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .schedule-list {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-button {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+.ndmenu-container{
+    max-width: 1200px;
+    margin: 20px auto;
+    margin-top: 30px;
+    padding: 20px;
+}
+.nd-menu ul{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.nd-menu li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+.nd-menu li a{
+    text-decoration: none;
+    background-color: darkblue;
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.4s ease;
+}
+
+.nd-menu li a:hover{
+    background-color: skyblue;
+    color: black;
+}
+
+
+
+
