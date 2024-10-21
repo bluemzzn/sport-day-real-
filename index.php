@@ -36,7 +36,11 @@
             </div>
             
             <div class="logo">
-            <img src="pic/logo2.png" width="60px" height="60px">
+              <img src="http://samakkhi.ac.th/wp-content/uploads/2022/07/swk-150x150.png" width="60px" height="60px">
+              <span class="title">
+                <p >โรงเรียนสามัคคีวิทยาคม<br> SAMAKKHIWITTAYAKHOM SCHOOL</p>
+                
+              </span>
             </div>
             
             <div class="sc">
