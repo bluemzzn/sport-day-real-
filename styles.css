@@ -27,6 +27,10 @@ nav.sticky{
     .title p{
         color: white;
     }
+
+    .bar-icon{
+        color: white;
+    }
 }
 
 .menu ul{
@@ -76,7 +80,7 @@ nav.sticky{
 }
 
 .title p{
-	color: black;
+    color: black;
 }
 
 .search{
@@ -157,11 +161,10 @@ nav.sticky{
 	border: none;
 	background-color: darkblue;
 	height: 40px;
-	font-weight: 500;
 	transition: 0.5s ease;
 	margin-right: 50px;
     font-family: "Mitr", sans-serif;
-
+    font-weight: 400;
 }
 
 .btn:hover{
@@ -255,7 +258,12 @@ nav.sticky{
         color: black;
     }
 
-    .logo {
+    .logo img{
+        display: flex;
+        top: 0;
+        left: 0;
+    }
+    .logo span{
         display: none;
     }
 
@@ -400,30 +408,38 @@ nav.sticky{
     margin-top: 30px;
     padding: 20px;
 }
-.nd-menu ul{
-    display: flex;
-    justify-content: center;
-   
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
 }
 
-.nd-menu li{
-    list-style: none;
-    margin-right: 25px;
-}
-
-.nd-menu li a{
-    text-decoration: none;
-    background-color: darkblue;
-    color: white;
+th, td {
+   border: 2px solid darkblue;
     padding: 10px;
-    border-radius: 30px;
-    transition: 0.4s ease;
+    text-align: left;
+    
 }
 
-.nd-menu li a:hover{
-    background-color: skyblue;
-    color: black;
+th {
+    background-color: darkblue;
+    color: white; /* Optional: style for header */
+    font-weight: 500;
+    padding: 10px;
+    
 }
+
+td{
+    background-color: #f9f9f9;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+td:hover{
+    background-color: #e1e1e1;
+}
+
 
 
 
