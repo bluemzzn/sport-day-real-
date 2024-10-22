@@ -110,12 +110,15 @@ nav.sticky{
 
 .login-all{
 	display: flex;
+    flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 
 }
-
+.login-all img{
+    margin-bottom: 20px;
+}
 .login-group{
 	width: 480px;
 	border: 1px solid lightgray;
@@ -435,7 +438,13 @@ td{
     transition: 0.4s ease;
     cursor: pointer;
 }
-
+td a{
+    color: darkblue;
+    transition: 0.4s ease;
+}
+td a:hover{
+    color: darkred;
+}
 td:hover{
     background-color: #e1e1e1;
 }
