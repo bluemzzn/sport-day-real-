@@ -38,37 +38,73 @@
         
     </div>
 
-    <div class="event-date">
-            <h1>19 November</h1>
-    </div>
+    <section>
+    <div>
+        <div class="event-date">
+                <h1>19 November</h1>
+        </div>
+        
+        <div class="schedule-list">
     
-    <div class="schedule-list">
-   
-        <div class="event-card" data-sport="Athletics">
-            <div class="event-info">
-                <h3>Athletics - 100m Men</h3>
-                <p>Date: November 28, 2024</p>
-                <p>Time: 14:00</p>
-                <p>Venue: สนามปิงปอง</p>
+            <div class="event-card" data-sport="Athletics">
+                <div class="event-info">
+                    <h3>Athletics - 100m Men</h3>
+                    <p>Date: November 28, 2024</p>
+                    <p>Time: 14:00</p>
+                    <p>Venue: สนามปิงปอง</p>
+                </div>
+                <div class="event-status">
+                    <p>Status: กำลังแข่งขัน</p>
+                </div>
             </div>
-            <div class="event-status">
-                <p>Status: กำลังแข่งขัน</p>
+
+            <div class="event-card" data-sport="Swimming">
+                <div class="event-info">
+                    <h3>Swimming - 200m Freestyle Women</h3>
+                    <p>Date: November 29, 2024</p>
+                    <p>Time: 10:00</p>
+                    <p>Venue: สนามฟุตบอล</p>
+                </div>
+                <div class="event-status">
+                    <p>Status: การแข่งขันสิ้นสุดแล้ว</p>
+                </div>
             </div>
+            <!-- More event cards -->
         </div>
 
-        <div class="event-card" data-sport="Swimming">
-            <div class="event-info">
-                <h3>Swimming - 200m Freestyle Women</h3>
-                <p>Date: November 29, 2024</p>
-                <p>Time: 10:00</p>
-                <p>Venue: สนามฟุตบอล</p>
-            </div>
-            <div class="event-status">
-                <p>Status: การแข่งขันสิ้นสุดแล้ว</p>
-            </div>
+        <div class="event-date">
+                <h1>20 November</h1>
         </div>
-        <!-- More event cards -->
+        
+        <div class="schedule-list">
+    
+            <div class="event-card" data-sport="Athletics">
+                <div class="event-info">
+                    <h3>Athletics - 100m Men</h3>
+                    <p>Date: November 28, 2024</p>
+                    <p>Time: 14:00</p>
+                    <p>Venue: สนามปิงปอง</p>
+                </div>
+                <div class="event-status">
+                    <p>Status: กำลังแข่งขัน</p>
+                </div>
+            </div>
+
+            <div class="event-card" data-sport="Swimming">
+                <div class="event-info">
+                    <h3>Swimming - 200m Freestyle Women</h3>
+                    <p>Date: November 29, 2024</p>
+                    <p>Time: 10:00</p>
+                    <p>Venue: สนามฟุตบอล</p>
+                </div>
+                <div class="event-status">
+                    <p>Status: การแข่งขันสิ้นสุดแล้ว</p>
+                </div>
+            </div>
+            <!-- More event cards -->
+        </div>
     </div>
+    </section>
 
    
 </div>
