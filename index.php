@@ -78,15 +78,28 @@
   </div>
 
   <section>
-    <div class="ndmenu-container">
-      <div class="nd-menu" >
-        <ul>
-            <li><a href="#"> แผนผัง </a></li>
-            <li><a href="#"> รายชื่อครูประจำชั้นตามคณะสี </a></li>
-            <li><a href="#"> ระเบียบการแข่งขัน </a></li>
-        </ul>
-      </div>
+  <div class="ndmenu-container">
+    <div class="nd-menu">
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        <i class="fas fa-file"></i> เอกสารงานแข่งขันต่างๆ
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>แผนผังสถานที่จัดการแข่งขันกีฬาภายใน <i class="fa-solid fa-link"></i></td></tr>
+                <tr><td>แผนที่เดินขบวนกีฬาภายใน <i class="fa-solid fa-link"></i></td></tr>
+                <tr><td>ผังตั้งขบวนกีฬาภายใน <i class="fa-solid fa-link"></i></td></tr>
+                <tr><td>แผนผังการจัดขบวนพาเหรดกีฬาสีภายใน <i class="fa-solid fa-link"></i></td></tr>
+                <tr><td>รายชื่อครูประจำชั้นแบ่งตามคณะสี <i class="fa-solid fa-link"></i></td></tr>
+                <tr><td>ระเบียบการแข่งขันกีฬาสีภายในโรงเรียนสามัคคีวิทยาคม <i class="fa-solid fa-link"></i></td></tr>
+            </tbody>
+        </table>
     </div>
+</div>
+
   </section>
 
 
